@@ -1,0 +1,29 @@
+button
+{
+    font:normal 30px Century Gothic, sans-serif;
+    font-style:normal;
+    color:#2d202e;
+    background:#dfe6eb;
+    border:0px outset #4a3a00;
+    box-shadow:-2px 4px 12px #2e2300;
+    -moz-box-shadow:-2px 4px 12px #2e2300;
+    -webkit-box-shadow:-2px 4px 12px #2e2300;
+    border-radius:15px 15px 15px 15px;
+    -moz-border-radius:15px 15px 15px 15px;
+    -webkit-border-radius:15px 15px 15px 15px;
+    width:20%;
+    padding:20px 46px;
+    text-align: center;
+    cursor:pointer;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin:10px auto;
+    }
+
+    button:active{
+    cursor:pointer;
+    position:relative;
+    top:2px;
+}
+    
