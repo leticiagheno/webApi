@@ -1,11 +1,14 @@
 package softle.raiz.models;
 
+import java.util.Date;
+
 public class Despesas 
 {
     private int id;
     private String nome;
     private String devidoPara;
     private String descricao;
+    private Date dataPagamento;
     private double valor;
   
     public void setId(int id) {
@@ -14,6 +17,14 @@ public class Despesas
 
     public int getId(){
         return id;
+    }
+
+    public void setDataPagamento(Date dataPagamento) {
+        this.dataPagamento = dataPagamento;
+    }
+
+    public Date getDataPagamento(){
+        return dataPagamento;
     }
 
     public void setDescricao(String descricao) {

@@ -1,4 +1,4 @@
-button
+.botoesPrincipais
 {
     font:normal 30px Century Gothic, sans-serif;
     font-style:normal;
@@ -19,9 +19,101 @@ button
     margin-right: auto;
     display: block;
     margin:10px auto;
-    }
+}
 
-    button:active{
+#tabelaValores
+{
+    box-shadow:-2px 4px 12px #2e2300;
+    -moz-box-shadow:-2px 4px 12px #2e2300;
+    -webkit-box-shadow:-2px 4px 12px #2e2300;
+    border-radius:15px 15px 15px 15px;
+    -moz-border-radius:15px 15px 15px 15px;
+    -webkit-border-radius:15px 15px 15px 15px;
+    font:normal Century Gothic, sans-serif;
+    border-collapse: collapse;
+    text-align: center;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.valoresGastos 
+{
+    width: 80%;
+}
+
+#total 
+{
+    text-align: right;
+}
+
+footer 
+{
+    position: fixed;
+    bottom: 0;
+    width: 95%;
+    height: 50px;
+    margin: 5px;
+    padding: 5px;
+    box-shadow:-2px 4px 12px #2e2300;
+    -moz-box-shadow:-2px 4px 12px #2e2300;
+    -webkit-box-shadow:-2px 4px 12px #2e2300;
+    border-radius:15px 15px 15px 15px;
+    -moz-border-radius:15px 15px 15px 15px;
+    -webkit-border-radius:15px 15px 15px 15px;
+}
+td
+{
+    padding: 5px;
+}
+
+tr:nth-child(even) 
+{
+    background-color: #CDC9C9;
+}
+
+tr:nth-child(odd) 
+{
+    background-color: #f2f2f2;
+}
+
+th
+{
+    padding: 10px;
+}
+
+.botoesSecundarios
+{
+    font:normal 10px Century Gothic, sans-serif;
+    font-style:normal;
+    color:#2d202e;
+    background:#dfe6eb;
+    border:0px outset #4a3a00;
+    box-shadow:-2px 4px 12px #2e2300;
+    -moz-box-shadow:-2px 4px 12px #2e2300;
+    -webkit-box-shadow:-2px 4px 12px #2e2300;
+    border-radius:15px 15px 15px 15px;
+    -moz-border-radius:15px 15px 15px 15px;
+    -webkit-border-radius:15px 15px 15px 15px;
+    width:10%;
+    text-align: center;
+    cursor:pointer;
+    margin-left: auto;
+    margin-right: auto;
+    margin:10px auto;
+}
+
+#adicionarGasto
+{
+    float: right;
+}
+
+#adicionarDespesa
+{
+    float: right;
+}
+
+button:active
+{
     cursor:pointer;
     position:relative;
     top:2px;

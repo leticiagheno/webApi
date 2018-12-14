@@ -5,25 +5,34 @@
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Lançamentos</title> 
         <link rel="stylesheet" type="text/css" href="style.css">
-        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-        <script src="script.js"></script>
     </head> 
     <body> 
-        
-        <div id="IdDaDiv">
-            <button id="btnBuscar">Gastos</button>
-            <br>
-            <button id="popUpButton">Despesas</button>
+        <button id="voltar" class="botoesSecundarios" hidden="hidden">Voltar</button>
+        <button id="adicionarGasto" class="botoesSecundarios" hidden="hidden">Adicionar Gasto</button>
+        <button id="adicionarDespesa" class="botoesSecundarios" hidden="hidden">Adicionar Despesa</button>
+        <div>
+            <button id="gastos" class="botoesPrincipais">Gastos</button>
+                <br>
+            <button id="despesas" class="botoesPrincipais">Despesas</button>
         </div>
-        <table> 
+        <table id="tabelaValores" hidden="hidden"> 
             <thead>
                 <tr>
-                    <th>Descrição</th>
-                    <th>Valor</th>
+                    <th id="nome" colspan="3">Nome</th>
+                    <th id="devidoPara" colspan="2">Devido Para</th>
+                    <th id="descricao" colspan="4">Descrição</th>
+                    <th id="dataPagamento">Data Máxima</th>
+                    <th id="valor">Valor</th>
                 </tr>
             </thead>
             <tbody id="tableContent">
             </tbody>
         </table>
+        <footer id="valorTotal" hidden="hidden">
+            <p id="valorTotalGastos" class="valoreaGastos" hidden="hidden">Valor total de gastos: </p>
+            <p id="valorTotalDespesas" class="valoreaGastos" hidden="hidden">Valor total despesas: </p>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script src="script.js"></script>
     </body>
 </hmtl>
