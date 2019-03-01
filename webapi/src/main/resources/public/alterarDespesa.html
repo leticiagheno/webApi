@@ -3,20 +3,22 @@
         <head>
             <meta charset="utf-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Adicionar Gasto</title> 
+        <title>Adicionar Despesa</title> 
         <link rel="stylesheet" type="text/css" href="style.css">
     </head> 
     <body> 
-       <form class="AdicionarGastos" id="AdicionarGastoForm" onsubmit="return false;">
+       <form class="AdicionarForms" id="AlterarDespesaForm" onsubmit="return false;">
            <input type="text" name="nome" placeholder="Nome">
+           <br>
+           <input type="text" name="devidoPara" placeholder="Devida Para">
            <br>
            <input type="text" name="descricao" placeholder="Descricao">
            <br>
            <input type="text" name="valor" placeholder="Valor">
            <br>
-           <input type="submit" value="Adicionar" id="SubmitAdicionarGasto">
+           <input type="submit" value="Adicionar" id="SubmitAlterarDespesa">
        </form>
     </body>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-    <script src="adicionarGastos.js"></script>
+    <script src="alterarDespesa.js"></script>
 </hmtl>

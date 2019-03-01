@@ -1,7 +1,9 @@
 $(document).ready(function () {
 
-    $('#SubmitAdicionarGasto').click(function () {
+    $('#SubmitAlterarGastos').click(function () {
+        var id = localStorage.getItem("id");
         var gasto = {
+            'id': id,
             'nome':  $('input[name=nome]').val(),
             'descricao': $('input[name=descricao]').val(),
             'valor': $('input[name=valor]').val(),
@@ -13,7 +15,7 @@ $(document).ready(function () {
 
         $.ajax(
             {
-                type: 'POST',
+                type: 'PUT',
                 url: urlLancamenos,
                 dataType: 'json',
                 contentType: 'application/json; charset=utf-8',

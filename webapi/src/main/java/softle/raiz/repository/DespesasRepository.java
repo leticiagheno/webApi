@@ -78,7 +78,7 @@ public class DespesasRepository implements IDespesasRepository
         return GetById(despesa.getId());
     }
 
-    public Despesas Remove(Despesas despesa) throws Exception
+    public int Remove(int id) throws Exception
     {
         Connection conn = Conexao.abrir();
         
@@ -87,14 +87,14 @@ public class DespesasRepository implements IDespesasRepository
         sql.append("WHERE (id = ?);");
 
         PreparedStatement comando = conn.prepareStatement(sql.toString());
-        comando.setInt(1, despesa.getId());
+        comando.setInt(1, id);
 
         int linhasAfetadas = comando.executeUpdate();
 
         comando.close();
         conn.close();
 
-        return despesa;
+        return id;
     }
 
     public List<Despesas> GetAll() throws Exception 

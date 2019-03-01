@@ -11,7 +11,7 @@ public interface IGastosRepository
 
     public Gastos Update(Gastos gasto) throws Exception;
 
-    public Gastos Remove(Gastos gasto) throws Exception;
+    public int Remove(int id) throws Exception;
 
     public List<Gastos> GetAll() throws SQLException, Exception;
 

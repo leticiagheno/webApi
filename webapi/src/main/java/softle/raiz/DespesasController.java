@@ -41,4 +41,9 @@ public class DespesasController
         return repository.Update(despesa);
     }
 
+    @RequestMapping(value = "", method= RequestMethod.DELETE)
+    int ExcluirDespesa(@RequestBody int id) throws Exception {
+        return repository.Remove(id);
+    }
+
 }

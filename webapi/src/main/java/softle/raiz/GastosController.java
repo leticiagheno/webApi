@@ -40,4 +40,9 @@ public class GastosController
         return repository.Update(gasto);
     }
 
+    @RequestMapping(value = "", method= RequestMethod.DELETE)
+    int DeletarGasto(@RequestBody int id) throws Exception {
+        return repository.Remove(id);
+    }
+
 }

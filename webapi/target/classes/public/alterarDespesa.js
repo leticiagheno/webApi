@@ -1,19 +1,22 @@
 $(document).ready(function () {
 
-    $('#SubmitAdicionarGasto').click(function () {
-        var gasto = {
+    $('#SubmitAlterarDespesa').click(function () {
+        var id = localStorage.getItem("id");
+        var despesa = {
+            'id': id,
             'nome':  $('input[name=nome]').val(),
+            'devidoPara': $('input[name=devidoPara]').val(),
             'descricao': $('input[name=descricao]').val(),
             'valor': $('input[name=valor]').val(),
         };
         
-        var jsonString = JSON.stringify(gasto);
+        var jsonString = JSON.stringify(despesa);
 
-        var urlLancamenos = "./gastos"; 
+        var urlLancamenos = "./despesas"; 
 
         $.ajax(
             {
-                type: 'POST',
+                type: 'PUT',
                 url: urlLancamenos,
                 dataType: 'json',
                 contentType: 'application/json; charset=utf-8',

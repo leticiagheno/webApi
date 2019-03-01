@@ -20,7 +20,6 @@ $(document).ready(function () {
                 data: jsonString, 
                 success: function (data)  
                 {
-                console.log("testetsttettetetsttstet");
                     window.location.href = "index.html";
                 },
                 error: function(){

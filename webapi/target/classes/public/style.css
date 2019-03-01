@@ -54,6 +54,7 @@ footer
     height: 50px;
     margin: 5px;
     padding: 5px;
+    background-color: whitesmoke;
     box-shadow:-2px 4px 12px #2e2300;
     -moz-box-shadow:-2px 4px 12px #2e2300;
     -webkit-box-shadow:-2px 4px 12px #2e2300;
@@ -64,6 +65,13 @@ footer
 td
 {
     padding: 5px;
+    text-align: center;
+}
+
+input
+{
+    text-align: center;
+    border-radius: 8px;
 }
 
 tr:nth-child(even) 

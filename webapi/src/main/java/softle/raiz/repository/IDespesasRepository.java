@@ -11,7 +11,7 @@ public interface IDespesasRepository
 
     public Despesas Update(Despesas despesa) throws Exception;
 
-    public Despesas Remove(Despesas despesa) throws Exception;
+    public int Remove(int id) throws Exception;
 
     public List<Despesas> GetAll() throws SQLException, Exception;
 

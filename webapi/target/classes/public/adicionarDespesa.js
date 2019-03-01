@@ -1,15 +1,16 @@
 $(document).ready(function () {
 
-    $('#SubmitAdicionarGasto').click(function () {
-        var gasto = {
+    $('#SubmitAdicionarDespesa').click(function () {
+        var despesa = {
             'nome':  $('input[name=nome]').val(),
+            'devidoPara': $('input[name=devidoPara]').val(),
             'descricao': $('input[name=descricao]').val(),
             'valor': $('input[name=valor]').val(),
         };
         
-        var jsonString = JSON.stringify(gasto);
+        var jsonString = JSON.stringify(despesa);
 
-        var urlLancamenos = "./gastos"; 
+        var urlLancamenos = "./despesas"; 
 
         $.ajax(
             {
